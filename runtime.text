@@ -1,0 +1,9 @@
+                   Insert(.unshift)     Append(.push)
+Tiny Array	           42.3 μs	           100 μs
+Small Array	           51.1 μs	           97.8 μs
+Medium Array	       197.9 μs	           138.6 μs
+Large Array	           9.041 ms	           675.4 μs
+Extra Large Array	   894.3746 ms	       3.3947 ms
+
+
+This Insert(.unshift) function runs faster at first, but as the array becomes bigger, the runtime of the Insert(.unshift) fucntion increases exponentionally. Looking at the Append(.push) however, though it starts off with a longer runtime, it increases at a slower rate, indicating it scales better.
